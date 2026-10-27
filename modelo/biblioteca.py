@@ -17,13 +17,16 @@ class Biblioteca:
 
         if cod_libro not in self.libros:
             raise ValueError(f"No existe un libro con el código {cod_libro}.")
+        
         if cod_socio not in self.socios:
             raise ValueError(f"No existe un socio con el código {cod_socio}.")
+        
         libro = self.libros[cod_libro]
         socio = self.socios[cod_socio]
 
         if socio.tiene_libro_prestado():
             raise ValueError(f"El socio '{socio.nombre}' ya tiene un libro prestado (código {socio.cod_libro}).")
+        
         libro.prestar(cod_socio)
         socio.cod_libro = cod_libro
 
