@@ -1,8 +1,8 @@
 class Socio:
-    def __init__(self, cod_socio, nombre, emial, cod_libro):
+    def __init__(self, cod_socio, nombre, email, cod_libro=None):
         self.cod_socio = cod_socio
         self.nombre = nombre
-        self.email = emial
+        self.email = email
         self.cod_libro = cod_libro
 
     def __str__(self):
