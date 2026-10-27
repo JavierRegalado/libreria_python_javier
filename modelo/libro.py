@@ -12,3 +12,6 @@ class Libro:
 
     def esta_prestado(self):
         return self.cod_socio is not None
+
+    def libros_disponibles(self, libros):
+        return [libro for libro in libros if not libro.esta_prestado()]
