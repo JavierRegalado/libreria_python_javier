@@ -99,3 +99,6 @@ def cargar_datos():
         mostrar_tabla_libros()
         mostrar_tabla_socios()
         guardar_datos()
+
+    if __name__ == "__main__":
+        main()
