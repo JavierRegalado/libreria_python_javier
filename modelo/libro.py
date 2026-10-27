@@ -1,5 +1,5 @@
 class Libro:
-    def __init__(self, cod_libro, titulo, autor, año, categoria, cod_socio):
+    def __init__(self, cod_libro, titulo, autor, año, categoria, cod_socio=None):
         self.cod_libro = cod_libro
         self.titulo = titulo
         self.autor = autor
@@ -12,6 +12,3 @@ class Libro:
 
     def esta_prestado(self):
         return self.cod_socio is not None
-
-    def libros_disponibles(self, libros):
-        return [libro for libro in libros if not libro.esta_prestado()]
