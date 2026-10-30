@@ -2,8 +2,8 @@ class Biblioteca:
 
     def __init__(self):
 
-        self.libros = []
-        self.socios = []
+        self.libros = {}
+        self.socios = {}
 
     def agregar_libro(self, libro):
 

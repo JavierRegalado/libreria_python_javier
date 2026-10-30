@@ -1,199 +1,100 @@
-0001;Don Quijote de la Mancha;Miguel de Cervantes;1605;Clásicos;0004
-
-0002;Cien años de soledad;Gabriel García Márquez;1967;Realismo Mágico;
-
-0003;1984;George Orwell;1949;Distopía;
-
-0004;Orgullo y prejuicio;Jane Austen;1813;Novela Romántica;
-
-0005;El señor de los anillos: La comunidad del anillo;J.R.R. Tolkien;1954;Fantasía;
-
-0006;Crimen y castigo;Fiódor Dostoyevski;1866;Novela Psicológica;
-
-0007;El principito;Antoine de Saint-Exupéry;1943;Fábulas;
-
-0008;Pedro Páramo;Juan Rulfo;1955;Realismo Mágico;
-
-0009;Rayuela;Julio Cortázar;1963;Ficción Experimental;
-
-0010;La metamorfosis;Franz Kafka;1915;Ficción Absurda;
-
-0011;Fahrenheit 451;Ray Bradbury;1953;Ciencia Ficción;
-
-0012;Un mundo feliz;Aldous Huxley;1932;Distopía;
-
-0013;El alquimista;Paulo Coelho;1988;Ficción / Espiritualidad;
-
-0014;La sombra del viento;Carlos Ruiz Zafón;2001;Misterio;
-
-0015;Ficciones;Jorge Luis Borges;1944;Cuentos;
-
-0016;La casa de los espíritus;Isabel Allende;1982;Realismo Mágico;
-
-0017;El retrato de Dorian Gray;Oscar Wilde;1890;Ficción Gótica;
-
-0018;Ensayo sobre la ceguera;José Saramago;1995;Ficción Filosófica;0005
-
-0019;El gran Gatsby;F. Scott Fitzgerald;1925;Clásicos;
-
-0020;Matar a un ruiseñor;Harper Lee;1960;Ficción Social;
-
-0021;El guardián entre el centeno;J.D. Salinger;1951;Ficción Moderna;
-
-0022;Los miserables;Victor Hugo;1862;Novela Histórica;
-
-0023;Guerra y paz;León Tolstói;1869;Novela Histórica;
-
-0024;Cumbres borrascosas;Emily Brontë;1847;Novela Romántica;
-
-0025;Jane Eyre;Charlotte Brontë;1847;Novela Romántica;
-
-0026;Frankenstein;Mary Shelley;1818;Ciencia Ficción / Gótico;
-
-0027;Drácula;Bram Stoker;1897;Terror Gótico;
-
-0028;Dune;Frank Herbert;1965;Ciencia Ficción;0010
-
-0029;Fundación;Isaac Asimov;1951;Ciencia Ficción;
-
-0030;El hobbit;J.R.R. Tolkien;1937;Fantasía;
-
-0031;Harry Potter y la piedra filosofal;J.K. Rowling;1997;Fantasía;
-
-0032;Juego de tronos;George R.R. Martin;1996;Fantasía Épica;
-
-0033;El nombre del viento;Patrick Rothfuss;2007;Fantasía Épica;
-
-0034;Los juegos del hambre;Suzanne Collins;2008;Distopía Juvenil;
-
-0035;Crónica de una muerte anunciada;Gabriel García Márquez;1981;Novela Corta;
-
-0036;El amor en los tiempos del cólera;Gabriel García Márquez;1985;Novela Romántica;
-
-0037;Los detectives salvajes;Roberto Bolaño;1998;Ficción Contemporánea;
-
-0038;2666;Roberto Bolaño;2004;Ficción Contemporánea;
-
-0039;La ciudad y los perros;Mario Vargas Llosa;1963;Novela Social;
-
-0040;Conversación en La Catedral;Mario Vargas Llosa;1969;Novela Política;
-
-0041;La fiesta del Chivo;Mario Vargas Llosa;2000;Novela Histórica;
-
-0042;El túnel;Ernesto Sabato;1948;Novela Psicológica;
-
-0043;Sobre héroes y tumbas;Ernesto Sabato;1961;Novela Psicológica;
-
-0044;El Aleph;Jorge Luis Borges;1949;Cuentos;0001
-
-0045;Bestiario;Julio Cortázar;1951;Cuentos;
-
-0046;La tía Tula;Miguel de Unamuno;1921;Novela Psicológica;
-
-0047;Niebla;Miguel de Unamuno;1914;Novela Filosófica;
-
-0048;La colmena;Camilo José Cela;1951;Novela Social;
-
-0049;La familia de Pascual Duarte;Camilo José Cela;1942;Novela Tremendista;
-
-0050;Camino de perfección;Pío Baroja;1902;Novela Filosófica;
-
-0051;El árbol de la ciencia;Pío Baroja;1911;Novela Filosófica;
-
-0052;Los pazos de Ulloa;Emilia Pardo Bazán;1886;Naturalismo;
-
-0053;Fortunata y Jacinta;Benito Pérez Galdós;1887;Realismo;
-
-0054;Doña Perfecta;Benito Pérez Galdós;1876;Realismo;
-
-0055;La regenta;Leopoldo Alas Clarín;1884;Realismo;
-
-0056;El viejo y el mar;Ernest Hemingway;1952;Novela Corta;
-
-0057;Por quién doblan las campanas;Ernest Hemingway;1940;Novela de Guerra;
-
-0058;De ratones y hombres;John Steinbeck;1937;Novela Drama;
-
-0059;Las uvas de la ira;John Steinbeck;1939;Novela Social;
-
-0060;En el camino;Jack Kerouac;1957;Generación Beat;
-
-0061;Lolita;Vladimir Nabokov;1955;Novela Psicológica;
-
-0062;Madame Bovary;Gustave Flaubert;1857;Realismo;
-
-0063;En busca del tiempo perdido;Marcel Proust;1913;Novela Psicológica;
-
-0064;Ulises;James Joyce;1922;Modernismo;
-
-0065;Dublineses;James Joyce;1914;Cuentos;
-
-0066;La divina comedia;Dante Alighieri;1320;Poesía Épica;
-
-0067;El ingenioso hidalgo Don Quijote de la Mancha II;Miguel de Cervantes;1615;Clásicos;
-
-0068;La ilíada;Homero;750;Poesía Épica;
-
-0069;La odisea;Homero;720;Poesía Épica;
-
-0070;Edipo rey;Sófocles;429;Tragedia Griega;
-
-0071;Hamlet;William Shakespeare;1601;Tragedia;
-
-0072;Romeo y Julieta;William Shakespeare;1597;Tragedia Romántica;
-
-0073;Macbeth;William Shakespeare;1606;Tragedia;
-
-0074;Fausto;Johann Wolfgang von Goethe;1808;Drama Filosófico;
-
-0075;Las cuitas del joven Werther;Johann Wolfgang von Goethe;1774;Romanticismo;
-
-0076;El Conde de Montecristo;Alexandre Dumas;1844;Novela de Aventuras;
-
-0077;Los tres mosqueteros;Alexandre Dumas;1844;Novela de Aventuras;
-
-0078;Viaje al centro de la Tierra;Julio Verne;1864;Ciencia Ficción;
-
-0079;Veinte mil leguas de viaje submarino;Julio Verne;1870;Ciencia Ficción;
-
-0080;La isla misteriosa;Julio Verne;1874;Aventuras;
-
-0081;Sapiens: De animales a dioses;Yuval Noah Harari;2011;Historia / Ensayo;
-
-0082;Homo Deus;Yuval Noah Harari;2015;Futuro / Ensayo;
-
-0083;Cosmos;Carl Sagan;1980;Divulgación Científica;
-
-0084;Breve historia del tiempo;Stephen Hawking;1988;Divulgación Científica;
-
-0085;El gen egoísta;Richard Dawkins;1976;Divulgación Científica;
-
-0086;Pensar rápido, pensar despacio;Daniel Kahneman;2011;Psicología;
-
-0087;El hombre en busca de sentido;Viktor Frankl;1946;Psicología / Filosofía;
-
-0088;Así habló Zaratustra;Friedrich Nietzsche;1883;Filosofía;
-
-0089;Más allá del bien y del mal;Friedrich Nietzsche;1886;Filosofía;
-
-0090;El arte de la guerra;Sun Tzu;500;Estrategia;
-
-0091;El príncipe;Nicolás Maquiavelo;1532;Filosofía Política;
-
-0092;Meditaciones;Marco Aurelio;180;Filosofía Estoica;
-
-0093;Un pavo real en el reino de los pingüinos;BJ Gallagher;1995;Desarrollo Personal;
-
-0094;Hábitos atómicos;James Clear;2018;Desarrollo Personal;
-
-0095;Los 7 hábitos de la gente highly efectiva;Stephen R. Covey;1989;Desarrollo Personal;
-
-0096;Padre rico, padre pobre;Robert Kiyosaki;1997;Finanzas Personales;
-
-0097;Cien años de soledad (Edición Ilustrada);Gabriel García Márquez;2017;Realismo Mágico;
-
-0098;El código Da Vinci;Dan Brown;2003;Misterio / Thriller;
-
-0099;Ángeles y demonios;Dan Brown;2000;Misterio / Thriller;
-
-0100;La chica del tren;Paula Hawkins;2015;Thriller Psicológico;
+1;Don Quijote de la Mancha;Miguel de Cervantes;1605;Clásicos;4
+2;Cien años de soledad;Gabriel García Márquez;1967;Realismo Mágico;
+3;1984;George Orwell;1949;Distopía;
+4;Orgullo y prejuicio;Jane Austen;1813;Novela Romántica;
+5;El señor de los anillos: La comunidad del anillo;J.R.R. Tolkien;1954;Fantasía;
+6;Crimen y castigo;Fiódor Dostoyevski;1866;Novela Psicológica;
+7;El principito;Antoine de Saint-Exupéry;1943;Fábulas;
+8;Pedro Páramo;Juan Rulfo;1955;Realismo Mágico;
+9;Rayuela;Julio Cortázar;1963;Ficción Experimental;
+10;La metamorfosis;Franz Kafka;1915;Ficción Absurda;
+11;Fahrenheit 451;Ray Bradbury;1953;Ciencia Ficción;
+12;Un mundo feliz;Aldous Huxley;1932;Distopía;
+13;El alquimista;Paulo Coelho;1988;Ficción / Espiritualidad;
+14;La sombra del viento;Carlos Ruiz Zafón;2001;Misterio;
+15;Ficciones;Jorge Luis Borges;1944;Cuentos;
+16;La casa de los espíritus;Isabel Allende;1982;Realismo Mágico;
+17;El retrato de Dorian Gray;Oscar Wilde;1890;Ficción Gótica;
+18;Ensayo sobre la ceguera;José Saramago;1995;Ficción Filosófica;5
+19;El gran Gatsby;F. Scott Fitzgerald;1925;Clásicos;
+20;Matar a un ruiseñor;Harper Lee;1960;Ficción Social;
+21;El guardián entre el centeno;J.D. Salinger;1951;Ficción Moderna;
+22;Los miserables;Victor Hugo;1862;Novela Histórica;
+23;Guerra y paz;León Tolstói;1869;Novela Histórica;
+24;Cumbres borrascosas;Emily Brontë;1847;Novela Romántica;
+25;Jane Eyre;Charlotte Brontë;1847;Novela Romántica;
+26;Frankenstein;Mary Shelley;1818;Ciencia Ficción / Gótico;
+27;Drácula;Bram Stoker;1897;Terror Gótico;
+28;Dune;Frank Herbert;1965;Ciencia Ficción;10
+29;Fundación;Isaac Asimov;1951;Ciencia Ficción;
+30;El hobbit;J.R.R. Tolkien;1937;Fantasía;
+31;Harry Potter y la piedra filosofal;J.K. Rowling;1997;Fantasía;
+32;Juego de tronos;George R.R. Martin;1996;Fantasía Épica;
+33;El nombre del viento;Patrick Rothfuss;2007;Fantasía Épica;
+34;Los juegos del hambre;Suzanne Collins;2008;Distopía Juvenil;
+35;Crónica de una muerte anunciada;Gabriel García Márquez;1981;Novela Corta;
+36;El amor en los tiempos del cólera;Gabriel García Márquez;1985;Novela Romántica;
+37;Los detectives salvajes;Roberto Bolaño;1998;Ficción Contemporánea;
+38;2666;Roberto Bolaño;2004;Ficción Contemporánea;
+39;La ciudad y los perros;Mario Vargas Llosa;1963;Novela Social;
+40;Conversación en La Catedral;Mario Vargas Llosa;1969;Novela Política;
+41;La fiesta del Chivo;Mario Vargas Llosa;2000;Novela Histórica;
+42;El túnel;Ernesto Sabato;1948;Novela Psicológica;
+43;Sobre héroes y tumbas;Ernesto Sabato;1961;Novela Psicológica;
+44;El Aleph;Jorge Luis Borges;1949;Cuentos;1
+45;Bestiario;Julio Cortázar;1951;Cuentos;
+46;La tía Tula;Miguel de Unamuno;1921;Novela Psicológica;
+47;Niebla;Miguel de Unamuno;1914;Novela Filosófica;
+48;La colmena;Camilo José Cela;1951;Novela Social;
+49;La familia de Pascual Duarte;Camilo José Cela;1942;Novela Tremendista;
+50;Camino de perfección;Pío Baroja;1902;Novela Filosófica;
+51;El árbol de la ciencia;Pío Baroja;1911;Novela Filosófica;
+52;Los pazos de Ulloa;Emilia Pardo Bazán;1886;Naturalismo;
+53;Fortunata y Jacinta;Benito Pérez Galdós;1887;Realismo;
+54;Doña Perfecta;Benito Pérez Galdós;1876;Realismo;
+55;La regenta;Leopoldo Alas Clarín;1884;Realismo;
+56;El viejo y el mar;Ernest Hemingway;1952;Novela Corta;
+57;Por quién doblan las campanas;Ernest Hemingway;1940;Novela de Guerra;
+58;De ratones y hombres;John Steinbeck;1937;Novela Drama;
+59;Las uvas de la ira;John Steinbeck;1939;Novela Social;
+60;En el camino;Jack Kerouac;1957;Generación Beat;
+61;Lolita;Vladimir Nabokov;1955;Novela Psicológica;
+62;Madame Bovary;Gustave Flaubert;1857;Realismo;
+63;En busca del tiempo perdido;Marcel Proust;1913;Novela Psicológica;
+64;Ulises;James Joyce;1922;Modernismo;
+65;Dublineses;James Joyce;1914;Cuentos;
+66;La divina comedia;Dante Alighieri;1320;Poesía Épica;
+67;El ingenioso hidalgo Don Quijote de la Mancha II;Miguel de Cervantes;1615;Clásicos;
+68;La ilíada;Homero;750;Poesía Épica;
+69;La odisea;Homero;720;Poesía Épica;
+70;Edipo rey;Sófocles;429;Tragedia Griega;
+71;Hamlet;William Shakespeare;1601;Tragedia;
+72;Romeo y Julieta;William Shakespeare;1597;Tragedia Romántica;
+73;Macbeth;William Shakespeare;1606;Tragedia;
+74;Fausto;Johann Wolfgang von Goethe;1808;Drama Filosófico;
+75;Las cuitas del joven Werther;Johann Wolfgang von Goethe;1774;Romanticismo;
+76;El Conde de Montecristo;Alexandre Dumas;1844;Novela de Aventuras;
+77;Los tres mosqueteros;Alexandre Dumas;1844;Novela de Aventuras;
+78;Viaje al centro de la Tierra;Julio Verne;1864;Ciencia Ficción;
+79;Veinte mil leguas de viaje submarino;Julio Verne;1870;Ciencia Ficción;
+80;La isla misteriosa;Julio Verne;1874;Aventuras;
+81;Sapiens: De animales a dioses;Yuval Noah Harari;2011;Historia / Ensayo;
+82;Homo Deus;Yuval Noah Harari;2015;Futuro / Ensayo;
+83;Cosmos;Carl Sagan;1980;Divulgación Científica;
+84;Breve historia del tiempo;Stephen Hawking;1988;Divulgación Científica;
+85;El gen egoísta;Richard Dawkins;1976;Divulgación Científica;
+86;Pensar rápido, pensar despacio;Daniel Kahneman;2011;Psicología;
+87;El hombre en busca de sentido;Viktor Frankl;1946;Psicología / Filosofía;
+88;Así habló Zaratustra;Friedrich Nietzsche;1883;Filosofía;
+89;Más allá del bien y del mal;Friedrich Nietzsche;1886;Filosofía;
+90;El arte de la guerra;Sun Tzu;500;Estrategia;
+91;El príncipe;Nicolás Maquiavelo;1532;Filosofía Política;
+92;Meditaciones;Marco Aurelio;180;Filosofía Estoica;
+93;Un pavo real en el reino de los pingüinos;BJ Gallagher;1995;Desarrollo Personal;
+94;Hábitos atómicos;James Clear;2018;Desarrollo Personal;
+95;Los 7 hábitos de la gente highly efectiva;Stephen R. Covey;1989;Desarrollo Personal;
+96;Padre rico, padre pobre;Robert Kiyosaki;1997;Finanzas Personales;
+97;Cien años de soledad (Edición Ilustrada);Gabriel García Márquez;2017;Realismo Mágico;
+98;El código Da Vinci;Dan Brown;2003;Misterio / Thriller;
+99;Ángeles y demonios;Dan Brown;2000;Misterio / Thriller;
+100;La chica del tren;Paula Hawkins;2015;Thriller Psicológico;
