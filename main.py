@@ -44,7 +44,7 @@ def cargar_datos():
 
     if os.path.exists(RUTA_SOCIOS):
         contador_socios = 0
-        with open(RUTA_SOCIOS, mode="r", encoding="UTF-8") as archivo:
+        with open(RUTA_SOCIOS, mode="r", encoding="UTF-8-SIG") as archivo:
             for linea in archivo:
                 linea = linea.strip()
                 if not linea:
@@ -66,12 +66,12 @@ def cargar_datos():
 def guardar_datos():
     os.makedirs(os.path.dirname(RUTA_LIBROS), exist_ok=True)
 
-    with open(RUTA_LIBROS, mode="w", encoding="UTF-8") as f:
+    with open(RUTA_LIBROS, mode="w", encoding="UTF-8-SIG") as f:
         for libro in biblioteca.libros.values():
             cod_socio_str = str(libro.cod_socio) if libro.cod_socio is not None else ""
             f.write(f"{libro.cod_libro};{libro.titulo};{libro.autor};{libro.año};{libro.categoria};{cod_socio_str}\n")
 
-    with open(RUTA_SOCIOS, mode="w", encoding="UTF-8") as f:
+    with open(RUTA_SOCIOS, mode="w", encoding="UTF-8-SIG") as f:
         for socio in biblioteca.socios.values():
             cod_libro_str = str(socio.cod_libro) if socio.cod_libro is not None else ""
             f.write(f"{socio.cod_socio};{socio.nombre};{socio.email};{cod_libro_str}\n")
