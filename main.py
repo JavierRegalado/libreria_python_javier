@@ -3,7 +3,7 @@ import os
 from modelo.libro import Libro
 from modelo.socio import Socio
 from modelo.biblioteca import Biblioteca
-from errores.excepciones import {
+from errores.excepciones import (
     BibliotecaError,
     LibroNoEncontradoError,
     SocioNoEncontradoError,
@@ -11,7 +11,7 @@ from errores.excepciones import {
     SocioConLibroError,
     SocioSinLibroError,
     CodigoExistenteError,
-}
+)
 
 RUTA_LIBROS = "datos/libros.txt"
 RUTA_SOCIOS = "datos/socios.txt"
@@ -133,33 +133,30 @@ def prestar_libro():
     try:
         cod_libro = int(input("Ingrese el código del libro: "))
         cod_socio = int(input("Ingrese el código del socio: "))
+
+        libro = biblioteca.libros.get(cod_libro)
+        socio = biblioteca.socios.get(cod_socio)
+
+        if not libro:
+            raise LibroNoEncontradoError(cod_libro)
+
+        if not socio:
+            raise SocioNoEncontradoError(cod_socio)
+
+        if libro.cod_socio is not None:
+            raise LibroYaPrestadoError(libro.cod_libro)
+
+        if socio.cod_libro is not None:
+            raise SocioConLibroError(socio.nombre, socio.cod_libro)
+
+
+        libro.cod_socio = socio.cod_socio
+        socio.cod_libro = libro.cod_libro
+        print(f"El libro '{libro.titulo}' ha sido prestado a '{socio.nombre}'.")
     except ValueError:
         print("Error: Los códigos deben ser números enteros.")
-        return
-
-    libro = biblioteca.libros.get(cod_libro)
-    socio = biblioteca.socios.get(cod_socio)
-
-    if not libro:
-        print(f"Error: El libro con código {cod_libro} no existe.")
-        return
-
-    if not socio:
-        print(f"Error: El socio con código {cod_socio} no existe.")
-        return
-
-    if libro.cod_socio is not None:
-        print(f"Error: El libro '{libro.titulo}' ya está prestado al socio con código {libro.cod_socio}.")
-        return
-
-    if socio.cod_libro is not None:
-        print(f"Error: El socio '{socio.nombre}' ya tiene prestado el libro con código {socio.cod_libro}.")
-        return
-
-
-    libro.cod_socio = socio.cod_socio
-    socio.cod_libro = libro.cod_libro
-    print(f"El libro '{libro.titulo}' ha sido prestado a '{socio.nombre}'.")
+    except BibliotecaError as e:
+        print(f"Error: {e}")
 
 
 
@@ -167,30 +164,29 @@ def devolver_libro():
     print("\n--- DEVOLVER UN LIBRO ---")
     try:
         cod_socio = int(input("Ingrese el código del socio: "))
+
+        socio = biblioteca.socios.get(cod_socio)
+
+        if not socio:
+            raise SocioNoEncontradoError(cod_socio)
+
+        if socio.cod_libro is None:
+            raise SocioSinLibroError(socio.nombre)
+
+        cod_libro = socio.cod_libro
+        libro = biblioteca.libros.get(cod_libro)
+
+
+        if libro:
+            libro.cod_socio = None
+        socio.cod_libro = None
+
+        titulo_libro = libro.titulo if libro else f"Código {cod_libro}"
+        print(f"Se ha devuelto el libro '{titulo_libro}' prestado a '{socio.nombre}'.")
     except ValueError:
-        print("Error: El código debe ser un número entero.")
-        return
-
-    socio = biblioteca.socios.get(cod_socio)
-
-    if not socio:
-        print(f"Error: El socio con código {cod_socio} no existe.")
-        return
-
-    if socio.cod_libro is None:
-        print(f"El socio '{socio.nombre}' no tiene ningún libro prestado actualmente.")
-        return
-
-    cod_libro = socio.cod_libro
-    libro = biblioteca.libros.get(cod_libro)
-
-
-    if libro:
-        libro.cod_socio = None
-    socio.cod_libro = None
-
-    titulo_libro = libro.titulo if libro else f"Código {cod_libro}"
-    print(f"Se ha devuelto el libro '{titulo_libro}' prestado a '{socio.nombre}'.")
+        print("Error: El código del socio debe ser un número entero.")
+    except BibliotecaError as e:
+        print(f"Error: {e}")
 
 
 def mostrar_socios_con_prestamos():
@@ -223,8 +219,7 @@ def menu_añadir_registros():
             try:
                 cod_libro = int(input("Código del libro: "))
                 if cod_libro in biblioteca.libros:
-                    print(f"[!] Error: Ya existe un libro con el código {cod_libro}.")
-                    continue
+                    raise CodigoExistenteError("libro", cod_libro)
 
                 titulo = input("Título: ").strip()
                 autor = input("Autor: ").strip()
@@ -241,8 +236,7 @@ def menu_añadir_registros():
             try:
                 cod_socio = int(input("Código del socio: "))
                 if cod_socio in biblioteca.socios:
-                    print(f"Error: Ya existe un socio con el código {cod_socio}.")
-                    continue
+                    raise CodigoExistenteError("socio", cod_socio)
 
                 nombre = input("Nombre completo: ").strip()
                 email = input("Email: ").strip()
