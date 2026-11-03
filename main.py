@@ -3,6 +3,15 @@ import os
 from modelo.libro import Libro
 from modelo.socio import Socio
 from modelo.biblioteca import Biblioteca
+from errores.excepciones import {
+    BibliotecaError,
+    LibroNoEncontradoError,
+    SocioNoEncontradoError,
+    LibroYaPrestadoError,
+    SocioConLibroError,
+    SocioSinLibroError,
+    CodigoExistenteError,
+}
 
 RUTA_LIBROS = "datos/libros.txt"
 RUTA_SOCIOS = "datos/socios.txt"
