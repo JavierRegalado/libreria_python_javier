@@ -22,7 +22,7 @@ biblioteca = Biblioteca()
 def cargar_datos():
     if os.path.exists(RUTA_LIBROS):
         contador_libros = 0
-        with open(RUTA_LIBROS, mode="r", encoding="UTF-8") as archivo:
+        with open(RUTA_LIBROS, mode="r", encoding="UTF-8-SIG") as archivo:
             for linea in archivo:
                 linea = linea.strip()
                 if not linea:
