@@ -1,3 +1,15 @@
+from modelo.libro import Libro
+from modelo.socio import Socio
+from errores.excepciones import (
+    LibroNoEncontradoError,
+    SocioNoEncontradoError,
+    LibroYaPrestadoError,
+    SocioConLibroError,
+    SocioSinLibroError,
+    CodigoExistenteError,
+)
+
+
 class Biblioteca:
 
     def __init__(self):
@@ -5,57 +17,68 @@ class Biblioteca:
         self.libros = {}
         self.socios = {}
 
-    def agregar_libro(self, libro):
+    def registrar_libro(self, libro):
 
+        if libro.cod_libro in self.libros:
+            raise CodigoExistenteError("libro", libro.cod_libro)
+        
         self.libros[libro.cod_libro] = libro
+        return libro
 
-    def agregar_socio(self, socio):
+    def registrar_socio(self, socio):
+
+        if socio.cod_socio in self.socios:
+            raise CodigoExistenteError("socio", socio.cod_socio)
 
         self.socios[socio.cod_socio] = socio
+        return socio
+
+    def obtener_libros_disponibles(self):
+        return [libro for libro in self.libros.values() if not libro.esta_prestado()]
+
+    def buscar_libros_por_titulo(self, titulo):
+        titulo_clean = titulo.lower().strip()
+        return [libro for libro in self.libros.values() if libro.titulo.lower().strip() in titulo_clean]
 
     def prestar_libro(self, cod_libro, cod_socio):
 
-        if cod_libro not in self.libros:
-            raise ValueError(f"No existe un libro con el código {cod_libro}.")
-        
-        if cod_socio not in self.socios:
-            raise ValueError(f"No existe un socio con el código {cod_socio}.")
-        
-        libro = self.libros[cod_libro]
-        socio = self.socios[cod_socio]
+        libro = self.libros.get(cod_libro)
+        socio = self.socios.get(cod_socio)
 
+        if not libro:
+            raise LibroNoEncontradoError(cod_libro)
+        if not socio:
+            raise SocioNoEncontradoError(cod_socio)
+        if libro.esta_prestado():
+            raise LibroYaPrestadoError(cod_libro, cod_socio)
         if socio.tiene_libro_prestado():
-            raise ValueError(f"El socio '{socio.nombre}' ya tiene un libro prestado (código {socio.cod_libro}).")
-        
-        libro.prestar(cod_socio)
+            raise SocioConLibroError(cod_socio, cod_libro)
+
+        libro.cod_socio = cod_socio
         socio.cod_libro = cod_libro
 
-    def devolver_libro(self, cod_libro):
+        return libro, socio
 
-        if cod_libro not in self.libros:
-            raise ValueError(f"No existe un libro con el código {cod_libro}.")
         
-        libro = self.libros[cod_libro]
+    def devolver_libro(self, cod_socio):
 
-        if not libro.esta_prestado():
-            raise ValueError(f"El libro '{libro.titulo}' no está prestado.")
-        
-        cod_socio = libro.cod_socio
+        socio = self.socios.get(cod_socio)
 
-        if cod_socio in self.socios:
-            self.socios[cod_socio].cod_libro = None
+        if not socio:
+            raise SocioNoEncontradoError(cod_socio)
+        if not socio.cod_libro:
+            raise SocioSinLibroError(socio.nombre)
 
-        libro.devolver()
+        cod_libro = socio.cod_libro
+        libro = self.libros.get(cod_libro)
 
-    def buscar_por_titulo(self, titulo):
+        if libro:
+            libro.devolver()
+        socio.cod_libro = None
 
-        titulo_clean = titulo.lower().strip()
-        return [libro for libro in self.libros.values() if libro.titulo.lower().strip() == titulo_clean]
+        return libro, socio, cod_libro
+
 
     def obtener_socios_con_libros(self):
 
-        return [
-            (socio, self.libros[socio.cod_libro])
-            for socio in self.socios.values()
-            if socio.tiene_libro_prestado() and socio.cod_libro in self.libros
-        ]
+        return [socio for socio in self.socios.values() if socio.tiene_libro_prestado()]
