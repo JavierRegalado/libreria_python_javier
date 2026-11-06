@@ -1,4 +1,4 @@
-1;Don Quijote de la Mancha;Miguel de Cervantes;1605;Clásicos;4
+﻿1;Don Quijote de la Mancha;Miguel de Cervantes;1605;Clásicos;4
 2;Cien años de soledad;Gabriel García Márquez;1967;Realismo Mágico;
 3;1984;George Orwell;1949;Distopía;
 4;Orgullo y prejuicio;Jane Austen;1813;Novela Romántica;

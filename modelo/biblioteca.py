@@ -50,9 +50,9 @@ class Biblioteca:
         if not socio:
             raise SocioNoEncontradoError(cod_socio)
         if libro.esta_prestado():
-            raise LibroYaPrestadoError(cod_libro, cod_socio)
+            raise LibroYaPrestadoError(libro.titulo, libro.cod_socio)
         if socio.tiene_libro_prestado():
-            raise SocioConLibroError(cod_socio, cod_libro)
+            raise SocioConLibroError(socio.nombre, socio.cod_libro)
 
         libro.cod_socio = cod_socio
         socio.cod_libro = cod_libro
