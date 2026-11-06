@@ -1,4 +1,3 @@
-import os
 from modelo.biblioteca import Biblioteca
 import datos.persistencia as persistencia
 from errores.excepciones import BibliotecaError
