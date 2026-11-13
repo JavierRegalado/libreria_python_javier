@@ -37,3 +37,6 @@ python main.py
 * **Almacenamiento robusto**: Migrar de `.txt` manual a `csv`, `json` o `sqlite3` para evitar fallos si algún campo contiene `;`.
 * **Validaciones y logging**: Validar cadenas vacías y formato de email, reemplazar el log manual por el módulo estándar `logging` y añadir un `.gitignore` (`__pycache__/`, `log.txt`).
 * **Ampliación funcional**: Permitir múltiples préstamos por socio, añadir fechas de vencimiento, implementar edición/borrado (CRUD) e incorporar tests unitarios (`pytest` o `unittest`).
+
+### Video Explicativo
+[Click aqui para ver el video explicativo de la apliacacion] (https://drive.google.com/file/d/1dz1GmMZ_T15cQoNo1QKJD6wG70b99QaW/view?usp=sharing)
